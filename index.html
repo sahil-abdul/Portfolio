@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="home" id="home">
+    <nav>
+      <i class="fa-solid fa-bars"></i>
+      <ul>
+        
+        <i class="fa-solid fa-ban"></i>
+        <li><a href="#about">About</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="text" >
+      <div class="first">
+        <div id="hello"></div>
+        <div id="sahil"></div>
+      </div>
+      <div id="web"></div>
+    </div>
+  </div>
+
+  <div class="about" id = "about">
+    <h1>About Me</h1>
+    <div class="inner">
+     <img src="background2.jpeg" alt="">
+      <div class="inf">
+      <div class="boxes">
+        
+        <div class="experince">
+          <i class="fa-solid fa-medal"></i>
+          <h2>Experience</h2>
+          <span>fresher</span>
+        </div>
+  
+        <div class="education">
+          <i class="fa-solid fa-user-group"></i>
+          <h2>Education</h2>
+          <span>Aspering BCA</span>
+        </div>
+        
+      </div>
+      <div class="info">
+        <p>Hi i'm Sahil an aspiring web developer currently in my second year of pursuing a BCA wuth a strong passion
+          for coding and problem-solving, I am particularly focused on projects utilizing the full stack, and I continuously
+          challenge myself through platform like LEETCODE I aim to create impactful web applications that enhance user experience.
+          Let's connect and explore opportunities to collobarate on exciting projects!
+        </p>
+      <a href="https://github.com/sahil-abdul"><button>Github</button></a>
+        
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="skill" id = "skill">
+    <div class="head">
+      <span>Explore My</span>
+      <h1>SKILLS</h1>
+    </div>
+    <div class="skillBoxes">
+
+    <div class="skl">
+      <div class="front">
+        <h1>Frontend Developent</h1>
+        <ul>
+          <li>html <span>Experince</span></li>
+          <li>CSS <span>Experince</span></li>
+          <li>Java script <span>Intermediate</span></li>
+          <li>React<span>Basic</span></li>
+          <li>bootstrap<span>Basic</span></li>
+          
+        </ul>
+      </div>
+    
+    <div class="backend">
+      <h1>Backend Developent</h1>
+      <ul>
+        <li>Node js <span>Basic</span></li>
+        <li>Mongo DB <span>Basic</span></li>
+        <li>Express js <span>Basic</span></li>
+        
+      </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="projects" id = "projects">
+    <div class="heading">
+      <span>Browse My Recent</span>
+      <h1>Project</h1>
+    </div>
+      <div class="projImage">
+      <div class="proj">
+        <div class="img1">
+         </div>
+          <h1>Project One</h1>
+          <button>Live Demo</button>
+        
+      
+    </div>
+    <div class="proj">
+      <div class="img2">
+      </div>
+        <h1>Project One</h1>
+        <button>Live Demo</button>
+      
+    
+  </div>
+  <div class="proj">
+    <div class="img3">
+    </div>
+      <h1>Project One</h1>
+      <button>Live Demo</button>
+    </div>
+  
+
+  </div>
+  </div>
+
+  <div class="Contact" id = "Contact">
+    <div class="get"><p>Get in Touch</p>
+    <h1>Contact Me</h1>
+   </div>
+   <div class="email">
+    <div class="mail">
+      <span><i class="fa-solid fa-envelope"></i>sahilabdul264gamil.com</span>
+      <div>
+      <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+      </div>
+    </div>
+   </div>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#web', {
+      strings: ['The Web Developer'],
+      typeSpeed: 100,
+    });
+  </script>
+  <script>
+    var typed = new Typed('#hello', {
+      strings: [`Hello i'm`],
+      typeSpeed: 100,
+    });
+  </script>
+  <script>
+    var typed = new Typed('#sahil', {
+      strings: ['Sahil'],
+      typeSpeed: 100,
+    });
+
+    let menu = document.querySelector(".home nav i")
+    let opt = document.querySelector(".home nav ul")
+    let cnl = document.querySelector(".home nav ul i")
+
+    cnl.addEventListener('click',() => {
+      opt.style.height = "0vh"
+     opt.style.width = "0vw"
+     menu.style.display = "block"
+    })
+
+    menu.addEventListener("click",() => {
+     opt.style.height = "25vh"
+     opt.style.width = "auto"
+     menu.style.display = "none"
+    })
+  </script>
+</body>
+
+</html>
